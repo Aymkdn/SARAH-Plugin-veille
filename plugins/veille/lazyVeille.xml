@@ -1,0 +1,15 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleLazyVeille" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleLazyVeille" scope="public">
+    <tag>out.action=new Object();</tag>
+    <item>Sarah</item>
+    <one-of>
+      <item>es tu la<tag>out.action._attributes.tts = "Je suis actuellement en veille"</tag></item>
+      <item>reviens maintenant
+        <tag>out.action._attributes.tts = "Je suis de retour !"</tag>
+        <tag>out.action._attributes.context = "default"</tag>
+      </item>
+    </one-of>
+    
+    <tag>out.action._attributes.threashold="0.85";</tag>
+  </rule> 
+</grammar>
