@@ -1,5 +1,5 @@
-<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleDemo" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
-  <rule id="ruleDemo" scope="public">
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleVeille" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleVeille" scope="public">
     <example>Sarah, es-tu là ?</example>
     <tag>out.action=new Object(); </tag>
 
@@ -8,7 +8,7 @@
     <one-of>
       <item>es tu la<tag>out.action._attributes.tts = "oui, je t'écoute"</tag></item>
       <item>mets toi en veille
-				<tag>out.action._attributes.context = "lazyDemo.xml"</tag>
+				<tag>out.action._attributes.context = "lazyVeille.xml"</tag>
 				<tag>out.action._attributes.tts = "Mode en veille activé."</tag>
 			</item>
     </one-of>
