@@ -1,7 +1,7 @@
 {
   "modules" : { 
     "veille"  : {
-      "description": "Permet de mettre en veille Sarah pour une durée définie par ctxTimeout dans le custom.ini",
+      "description": "Permet de mettre en veille Sarah pour une durÃ©e dÃ©finie par ctxTimeout dans le custom.ini",
       "version" : "1.0"
     }
   }
